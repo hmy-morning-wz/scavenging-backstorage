@@ -1,0 +1,11 @@
+stages:
+  - deploy
+
+# 定义 job
+job1:
+  stage: deploy
+  script:
+    - pwd
+    - /data/deploy/autocode/scavenging.sh
+  only:
+    - stable
